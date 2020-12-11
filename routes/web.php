@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('malaquita',[PiedraController::class,'piedra1'])->name('malaquita.piedra1');
+
+Route::get('malaquita/{piece}',[PiedraController::class,'mostrar'])->name('malaquita.mostrar');

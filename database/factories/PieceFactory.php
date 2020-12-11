@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\piece;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 class PieceFactory extends Factory
 {
@@ -21,10 +22,10 @@ class PieceFactory extends Factory
      */
     public function definition()
     {
-        $min= 300;
-        $max = 600;
+       $name = $this ->faker->randomElement(['Maya con hacha','Leopardo Negro','Elefante con colmillos']);
         return [
-            'name'=>$this ->faker->randomElement(['maya','leopardo','elefante']),
+            'name'=>$name,
+            'slug'=>Str::slug($name ,'-'),
             'description'=>$this ->faker->sentence(),
             'price'=>$this ->faker->randomFloat(0, 300, 500) 
         ];
