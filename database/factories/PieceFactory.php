@@ -22,7 +22,7 @@ class PieceFactory extends Factory
      */
     public function definition()
     {
-       $name = $this ->faker->randomElement(['Maya con hacha','Leopardo Negro','Elefante con colmillos']);
+       $name = $this ->faker->sentence(4);
         return [
             'name'=>$name,
             'slug'=>Str::slug($name ,'-'),

@@ -14,6 +14,9 @@ class piece extends Model
         return 'slug';
     }
 
-
+    // RELACION UNO A MUCHOS
+    public function coments(){
+        return $this->hasMany('App\Models\coment');
+    }
 
 }

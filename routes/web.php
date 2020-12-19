@@ -18,6 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// routa para mostrar productos de piece
 Route::get('malaquita',[PiedraController::class,'piedra1'])->name('malaquita.piedra1');
+
+//routa donde envias los datos que necesitas para mostrar el registro que seleccionas
 
 Route::get('malaquita/{piece}',[PiedraController::class,'mostrar'])->name('malaquita.mostrar');
