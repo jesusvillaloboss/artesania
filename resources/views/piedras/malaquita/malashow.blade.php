@@ -3,13 +3,12 @@
 
 @section('content')
 
-        {{-- MUESTRA DE LA PIEZA --}}
+                {{-- MUESTRA DE LA PIEZA Junto con el precio--}}
     <div class="bg-gray-300">
             <div class="container mx-auto py-20 ">
-            
                 <div class="grid grid-cols-1 sm:grid-cols-3  gap-4  ">
                         <div class="  col-span-1 sm:col-span-2  ">
-                            <img class=" w-full max-h-full pb-8   " src="https://source.unsplash.com/MNtag_eXMKw/1600x900" class="h-40 rounded-md" alt="" />
+                            <img class=" w-full max-h-full pb-8 rounded-lg  " src="https://source.unsplash.com/MNtag_eXMKw/1600x900" class="h-40 rounded-md" alt="" />
 
                         </div>
                     <div class=" rounded-lg border-8 border-gray-800">
@@ -30,25 +29,51 @@
                     
                 </div>
             </div>
+                {{-- MUESTRA DE LA PIEZA Junto con el precio fin--}}
+
+
         
         {{-- OPINIONES DEL PRODUCTO --}}
             
-        {{-- esto agregue --}}
-
+       
         {{$piece->id}}
         
+         {{-- Comentarios de cada producto --}}
         
-        <ul>
-            {{-- usa la variable $sht que se creo en el controlador y la variable $shirt se crea aqui --}}
-            @foreach ($v as $comentario) 
-                <li>
-                   <a href="">resultado: {{$comentario->titulo}}</a>
-                <br>
-                   <a href="">resultado: {{$comentario->comen}}</a>
-                </li>
-            @endforeach
-        </ul>
-    
+         {{-- Comentarios de cada producto fin--}}
+
+                    @if ($v->isEmpty())
+                        <div>No hay Comentarios</div>
+                    @else
+       
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 gap-3 ">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-3xl ">OPINIONES DEL PRODUCTO</h3>
+                        <h3 class="text-1xl text-blue-400 font-bold ">Ver mas comentarios</h3>
+
+                    </div>
+
+
+
+                    @foreach ($v as $comentario) 
+                        <div class="border-8 border-gray-800 rounded-lg">
+                            <div class="flex items-start px-4 py-6 ">
+                                <img class="w-12 h-12 rounded-full object-cover mr-4 shadow" src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar">
+                                <div class="">
+                                    <div class="flex items-center justify-between">
+                                        <h2 class="text-lg font-semibold text-gray-900 -mt-1"> {{$comentario['titulo']}}</h2>
+                                    </div>
+                                    <p class="text-gray-700">Publicado: {{$comentario->created_at}} </p>
+                                    <p class="mt-3 text-gray-700 text-sm">COMENTARIO: {{$comentario->comen}}</p>
+                                </div>
+                            </div>             
+                        </div>
+                    @endforeach
+       
+                    @endif
+                </div>
+            </div>
         
 
 

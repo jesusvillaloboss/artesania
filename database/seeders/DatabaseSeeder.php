@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\piece;
+use App\Models\coment;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,5 +16,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         \App\Models\piece::factory(10)->create();
+        \App\Models\coment::factory(40)->create();
     }
 }

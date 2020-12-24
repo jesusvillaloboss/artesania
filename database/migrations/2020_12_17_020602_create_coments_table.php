@@ -15,7 +15,7 @@ class CreateComentsTable extends Migration
     {
         Schema::create('coments', function (Blueprint $table) {
             $table->id();
-            $table->string('titulo', 45);
+            $table->string('titulo');
             $table->text('comen');
             $table->unsignedBigInteger('piece_id');
 
