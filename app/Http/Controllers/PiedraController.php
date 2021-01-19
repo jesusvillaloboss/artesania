@@ -15,18 +15,22 @@ class PiedraController extends Controller
     }
     public function mostrar(piece $piece){
 
-        
+        //Envia los datos del producto que seleccionas y lo almacena en piece
 
-        // agregue coment
+       
           $v = piece::find($piece->id); //Encuentra los datos correspondientes al id seleccionado
           $v= $v->coments->take(3); //esos datos (array) se buscan sus comentarios relacionados y se almacenan solo 3 con take
           
-            
+            $all = piece::find($piece->id)->coments; //obtienes todos los registros pertenecientes a ese producto
+   
+        return view('piedras.malaquita.malashow',compact('piece','v','all'));
 
-         
-
-        return view('piedras.malaquita.malashow',compact('piece','v'));
-
+        
+    }
+    public function store(Request $request){
+        $coment = coment::create($request->all()); //obtiene los datos del form junto con el piece_id y los registra en el producto correspondiente
+        $v = piece::find($request->piece_id); //Se busca la informacion del producto para obtener el slug
+        return redirect()->route('malaquita.mostrar',$v->slug); //El slug permite redireccionar a el producto una vez guardado el comentario nuevo
         
     }
 
