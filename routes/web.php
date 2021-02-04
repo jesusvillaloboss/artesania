@@ -27,3 +27,6 @@ Route::get('malaquita/{piece}',[PiedraController::class,'mostrar'])->name('malaq
 
 //ruta utilizada para agregar comentarios a un producto
 Route::post('malaquita',[PiedraController::class,'store'])->name('malaquita.store'); 
+
+//ruta para mostrar lo mas nuevo de los productos
+Route::get('nuevo',[PiedraController::class, 'nuevo'])->name('nuevo');
