@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>@yield('title')</title>
 </head>
 <body>
@@ -14,4 +15,5 @@
     
 </body>
 <script src="js/app.js"></script>
+
 </html>

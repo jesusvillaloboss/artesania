@@ -26,7 +26,7 @@ class PieceFactory extends Factory
         return [
             'name'=>$name,
             'slug'=>Str::slug($name ,'-'),
-            'description'=>$this ->faker->sentence(),
+            'description'=>$this ->faker->sentence(30),
             'price'=>$this ->faker->randomFloat(0, 300, 500) 
         ];
     }

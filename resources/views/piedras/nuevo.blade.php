@@ -29,7 +29,7 @@
               
               <div class="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col items-center">
                   <div class="bg-white rounded-lg mt-5">
-                    <img src="https://source.unsplash.com/MNtag_eXMKw/1600x900" class="h-40 rounded-md" alt="" />
+                    <img src="img/malaquita2.jpg" class="h-40 rounded-md" alt="" />
                   </div>
 
                       <!-- scale INICIO -->

@@ -44,5 +44,17 @@ class PiedraController extends Controller
 
         return view('piedras.nuevo',compact('nuevo'));
     }
+
+    public function descuentos(){
+        // return view ('piedras.descuentos');
+        $pie = piece::OrderBy('price','asc')->paginate();
+        $descuento = $pie->take(5);
+        
+
+        return view ('piedras.descuentos', compact('descuento'));
+
+
+
+    }
     
 }

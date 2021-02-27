@@ -30,3 +30,6 @@ Route::post('malaquita',[PiedraController::class,'store'])->name('malaquita.stor
 
 //ruta para mostrar lo mas nuevo de los productos
 Route::get('nuevo',[PiedraController::class, 'nuevo'])->name('nuevo');
+
+//Ruta para mostrar los descuentos
+Route::get('descuentos',[PiedraController::class, 'descuentos'])->name('descuentos');
