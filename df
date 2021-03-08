@@ -1,0 +1,41 @@
+[33mcommit 722a7899ca02ca6200b2e709f6bbd3c6b576ea3d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: jesus <chidori_sasuke_uchiha@hotmail.com>
+Date:   Sat Feb 27 13:19:48 2021 -0600
+
+    7.-Ajuste de Diseño y se agrego boton de descuento
+
+[33mcommit 509281af7dea5a384a58c864185acbbb96feb271[m
+Author: jesus <chidori_sasuke_uchiha@hotmail.com>
+Date:   Thu Feb 4 16:14:33 2021 -0600
+
+    6.-Mejor diseño principal y secundario,se  agrego boton  lo mas nuevo en producto
+
+[33mcommit b61c9b01d116becbd15efba9ff791050b8d1c1f7[m
+Author: jesus <chidori_sasuke_uchiha@hotmail.com>
+Date:   Tue Jan 19 13:20:28 2021 -0600
+
+    5.-Funciona el modal ademas de agregar form y poder agregar nuevo comentario a cada producto
+
+[33mcommit ba480c1a9ceaa0f9399da3e638a54933c1808b2c[m
+Author: jesus <chidori_sasuke_uchiha@hotmail.com>
+Date:   Wed Dec 23 19:00:55 2020 -0600
+
+    4.-Ahora de muestran tres comentarios,(se agregara modal para mostrar los demas)
+
+[33mcommit 9e4b3f5de26031f072b289dc8a606a14b2fa5853[m
+Author: jesus <chidori_sasuke_uchiha@hotmail.com>
+Date:   Fri Dec 18 19:26:30 2020 -0600
+
+    3.-Se agrego una relacion uno a muchos  y ya se muestran comentarios de cada producto
+
+[33mcommit d1d47f3f431b1d53b8f41e27d7681d5aca3b8408[m
+Author: jesus <chidori_sasuke_uchiha@hotmail.com>
+Date:   Thu Dec 10 19:38:50 2020 -0600
+
+    2.-Se agrego muestra de pieza a comprar
+
+[33mcommit 71473c8600c875ee4f3b3db172fb08fa360d2242[m
+Author: jesus <chidori_sasuke_uchiha@hotmail.com>
+Date:   Tue Dec 1 20:12:26 2020 -0600
+
+    1.-Primer avance

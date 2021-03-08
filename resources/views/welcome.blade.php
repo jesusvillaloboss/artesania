@@ -68,24 +68,24 @@
 			</div>
 			</div>
 
-					<div class=" bg-blue-300 flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+					<div class="  flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg" style="background: #cae4db;">
 						<div class="relative pt-10 px-10 flex items-center justify-center">
-						<div class=" bg-blue-300 block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
+						<div class="  block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
 						<img class="relative w-40" src="img/malaquita.png" alt="">
 						</div>
-						<div class="relative text-white text-center px-6 pb-6 mt-6">
+						<div class="relative text-black text-center px-6 pb-6 mt-6">
 						
 						<a href="{{route('malaquita.piedra1')}}">Malaquita</a>
 				
 						</div>
 					</div>
 
-			<div class=" bg-blue-300 flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+			<div class=" flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg" style="background: #cae4db;">
 				<div class="relative pt-10 px-10 flex items-center justify-center">
-				<div class=" bg-blue-300 block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
+				<div class="  block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
 				<img class="relative w-40" src="img/malaquita.png" alt="">
 				</div>
-				<div class="relative text-white text-center px-6 pb-6 mt-6">
+				<div class="relative text-black text-center px-6 pb-6 mt-6">
 				
 				<a href="{{route('malaquita.piedra1')}}">Malaquita</a>
 		
